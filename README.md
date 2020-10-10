@@ -19,6 +19,6 @@
 - class InterModalityUpdate(nn.Module):    # 模块间的融合，使用自注意，每一个单词与每个区域互相引导
 - class DyIntraModalityUpdate(nn.Module):  # 模块内的动态融合，单词自注意时受区域的影响，区域自注意时受单词的影响
 
-# 说明
+#### 说明
 部分没有用到是因为，作者的代码也是在别人的代码基础上改的。https://github.com/Cyanogenoid/vqa-counting/tree/master/vqa-v2
 
