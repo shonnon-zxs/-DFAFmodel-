@@ -91,6 +91,7 @@ class Net(nn.Module):
 
         return answer
 
+# 没有用到
 class Fusion(nn.Module):
     """ Crazy multi-modal fusion: negative squared difference minus relu'd sum
     """
@@ -101,6 +102,7 @@ class Fusion(nn.Module):
         # found through grad student descent ;)
         return - (x - y)**2 + F.relu(x + y)
 
+# 没有用到 
 class ReshapeBatchNorm(nn.Module):
     def __init__(self, feat_size, affine=True):
         super(ReshapeBatchNorm, self).__init__()
@@ -177,7 +179,7 @@ class SingleBlock(nn.Module):
 
         return v, q
 
-# 没有用到
+# 没有用这种连接方式
 class MultiBlock(nn.Module):
     """
     Multi Block Inter-/Intra-modality
